@@ -5,12 +5,14 @@ import Customers from "./customers";
 import Rentals from "./rentals";
 import LoginForm from "./loginForm";
 import MovieDetails from "./movieDetails";
+import RegisterForm from "./registerForm";
 import NotFound from "./notFound";
 
 const VidlyRoutes = () => {
   return (
     <Switch>
       <Route path="/login" component={LoginForm} />
+      <Route path="/register" component={RegisterForm} />
       <Route path="/rentals" component={Rentals} />
       <Route path="/customers" component={Customers} />
       <Route path="/movies/:id" component={MovieDetails} />
